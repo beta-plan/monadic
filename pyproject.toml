@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "monadic"
+version = "0.1.0"
+description = "A functional programming library for Python, implementing monads for more efficient and streamlined functional programmin."
+authors = ["Minato <82735346+minato-ellie@users.noreply.github.com>"]
+license = "Apache-2.0"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8,<3.11"
+
+
+[tool.poetry.group.dev.dependencies]
+pytype = "^2023.1.31"
+pytest = "^7.2.1"
+jax = {extras = ["cup"], version = "^0.4.2"}
+
+[build-system]
+requires = ["poetry-core", "setuptools", "wheel"]
+build-backend = "poetry.core.masonry.api"
